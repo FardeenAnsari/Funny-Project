@@ -10,8 +10,11 @@
             margin: 0; /* Remove default margin */
             padding: 0; /* Remove default padding */
             overflow: hidden; /* Prevent content from overflowing the screen */
-            /* Optional: Set background color if desired */
-            background-color: #ffc0c0;  /* Light gray background */
+            background-image: url("bg.jpg"); /* Path to your background image */
+            background-size: cover; /* Scale image to cover container */
+            background-position: center; /* Center image horizontally and vertically */
+            background-repeat: no-repeat; /* Prevent image repetition */
+            height: 100vh; /* Set body height to 100% viewport height */
         }
         
         #game-container {
@@ -23,6 +26,9 @@
             height: 600px; /* Set a fixed height */
             border: 2px solid #ae003d; /* Border style */
             box-sizing: border-box; /* Include border in width/height calculations */
+            background: rgba(0, 0, 0, 0.2); /* Semi-transparent black background */
+            backdrop-filter: blur(10px); /* Apply blur effect with 10px intensity */
+            /* Optional: Adjust blur intensity (higher value = stronger blur) */
         }
         
         #yes{
